@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+body {
+  background: #eee;
+  color: #2f2f2f;
+  font-size: .875rem;
+  font-family: -apple-system,Helvetica Neue,Arial,PingFang SC,lucida grande,lucida sans unicode,lucida,helvetica,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif
+}
+
+body,h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0
+}
+
+a {
+  color: #437abe;
+  text-decoration: none
+}
+
+a:hover {
+  color: #37649c;
+  text-decoration: underline
+}
+
+li,ul {
+  list-style: none
+}
+
+aside,div,header,section {
+  box-sizing: border-box
+}
+
+aside#sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background: #fff
+}
+
+aside#sidebar header {
+  padding-top: 20px;
+  background: #31518c;
+  box-shadow: .28px 1.98px 39.56px 3.44px hsla(0,1%,75%,.83);
+  text-align: center
+}
+
+aside#sidebar header div.avatar {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: .35px 4.99px 7.2pc .8pc rgba(82,81,81,.33)
+}
+
+aside#sidebar header div.avatar img {
+  width: 100%;
+  height: inherit;
+  border-radius: 100%
+}
+
+aside#sidebar header div.text {
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+aside#sidebar header div.text h1,aside#sidebar header div.text p {
+  color: #fff
+}
+
+aside#sidebar section#skill {
+  overflow-y: scroll;
+  padding: 20px 10%
+}
+
+aside#sidebar section#skill h2 {
+  color: #6d6d6d;
+  font-family: 微软雅黑
+}
+
+aside#sidebar section#skill ul#list-skill {
+  display: block;
+  height: 300px;
+  list-style-type: none
+}
+
+aside#sidebar section#skill ul#list-skill li {
+  display: block;
+  padding: 5px 0
+}
+
+aside#sidebar section#skill ul#list-skill li h3 {
+  padding: 5px 0;
+  color: #6d6d6d;
+  font-size: 1.125rem
+}
+
+aside#sidebar section#skill ul#list-skill li div.level {
+  overflow: hidden;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background: #e0e0e0
+}
+
+aside#sidebar section#skill ul#list-skill li div.level div.level-80 {
+  width: 80%;
+  height: 10px;
+  background: #31518c
+}
+
+aside#sidebar section#skill ul#list-skill li div.level div.level-60 {
+  width: 55%;
+  height: 10px;
+  background: #31518c
+}
+
+aside#sidebar section#skill ul#list-skill li div.level div.level-40 {
+  width: 50%;
+  height: 10px;
+  background: #31518c
+}
+
+div#container {
+  position: relative;
+  left: 25%;
+  width: 75%
+}
+
+header#head {
+  position: relative;
+  padding: 10px 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 27px 0 hsla(0,0%,71%,.83)
+}
+
+header#head:after {
+  clear: both;
+  display: block;
+  content: ''
+}
+
+header#head div#about-me,header#head div#contact-me {
+  float: left;
+  padding: 20px 30px;
+  width: 50%
+}
+
+header#head div#about-me h1,header#head div#contact-me h1 {
+  color: #31518c
+}
+
+header#head div#about-me p,header#head div#contact-me p {
+  color: #8a8a8a;
+  font-size: 1pc
+}
+
+header#head div#contact-me ul.list-contact {
+  list-style-type: none
+}
+
+header#head div#contact-me ul.list-contact li {
+  display: block;
+  padding: 3px 0;
+  color: #8a8a8a;
+  font-size: 1pc
+}
+
+header#head div#contact-me ul.list-contact li i {
+  margin-right: 7px;
+  color: #000
+}
+
+header#head div#contact-me ul.list-contact li a {
+  font-size: 1.125rem
+}
+
+header#head div#about-me {
+  border-left: 1px solid #ccc
+}
+
+header#head li {
+  font-size: 1pc
+}
+
+section#bio {
+  overflow: hidden;
+  margin: 20px auto;
+  width: 90%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: #fff;
+  box-shadow: .14px 2px 26.68px 2.32px hsla(0,2%,70%,.28)
+}
+
+section#bio div.img-full {
+  position: relative;
+  width: 100%;
+  height: 25pc
+}
+
+section#bio div.img-full img.illustartion {
+  width: 100%;
+  height: inherit
+}
+
+section#bio div.img-full span.bio-icon {
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  color: #fff;
+  letter-spacing: .125rem;
+  font-size: 1.875rem
+}
+
+section#bio div.img-full span.bio-icon i.icon {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 3.125rem
+}
+
+section#bio div.img-full div.avatar {
+  position: absolute;
+  bottom: -75px;
+  left: 40px;
+  z-index: 100;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: .28px 1.98px 39.56px 3.44px hsla(0,1%,75%,.83)
+}
+
+section#bio div.img-full div.avatar img {
+  width: 100%;
+  height: inherit;
+  border-radius: 100%
+}
+
+section#bio div.desc {
+  padding: 10px 10%
+}
+
+section#bio div.desc div.title-name {
+  position: relative;
+  padding-left: 20%
+}
+
+section#bio div.desc div.title-name span.icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: inline-block
+}
+
+section#bio div.desc div.title-name span.icon i {
+  color: #b9b9b9;
+  font-size: 2.5rem
+}
+
+section#bio div.desc div.biodata {
+  padding: 30px 0
+}
+
+section#bio div.desc div.biodata ul {
+  padding-left: 10px
+}
+
+section#bio div.desc div.biodata ul li {
+  display: block;
+  padding: 3px 0;
+  color: #666;
+  font-size: 1.25rem
+}
+
+section#bio div.desc div.biodata ul li p {
+  padding-left: 20px;
+  font-weight: lighter
+}
+
+section#bio div.desc div.skill {
+  padding: 5px
+}
+
+section#bio div.desc div.skill ul.skill-list {
+  margin: 0;
+  font-size: 1pc
+}
+
+section#bio div.desc div.skill ul.skill-list li {
+  padding: 10px 0;
+  color: #333;
+  list-style: square
+}
+
+section#bio div.desc div.project div.project-title {
+  position: relative
+}
+
+section#bio div.desc div.project div.project-title h3 a {
+  text-decoration: underline
+}
+
+section#bio div.desc div.project div.project-title span {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: #666
+}
+
+section#bio div.desc div.project div.project-title div.project-title-more {
+  position: absolute;
+  top: 8px;
+  right: 0
+}
+
+section#bio div.desc div.project div.project-list {
+  padding: 15px
+}
+
+section#bio div.desc div.project div.project-list ul {
+  margin-top: 0
+}
+
+section#bio div.desc div.project div.project-list ul li {
+  list-style: decimal;
+  font-size: 1pc;
+  line-height: 1.7
+}
+
+section#bio div.desc div.project div.project-list h4 {
+  padding-top: 5px
+}
+
+section#bio div.desc div.appraisal {
+  padding: 20px 0
+}
+
+section#bio div.desc div.appraisal p {
+  padding: 0 20px;
+  font-size: 1pc;
+  line-height: 1.7
+}
+
+section#bio div.desc div.social {
+  padding: 10px 0
+}
+
+section#bio div.desc div.social ul {
+  margin: 0
+}
+
+section#bio div.desc div.social ul li {
+  display: block
+}
+
+section#bio div.desc div.social ul li a {
+  font-size: 1pc
+}
+
+section#bio div.desc div.social ul li i {
+  padding: 10px;
+  font-size: 1.125rem
+}
+
+section#bio div.desc div.thanks p {
+  padding-left: 20px;
+  font-size: 1pc
+}
+
+section#bio div.desc h2.desc-title {
+  padding: 5px;
+  color: #31518c
+}
+
+hr.separator {
+  border: 1px solid #ccc
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+  aside#sidebar {
+    position: static;
+    width: 100%;
+    height: 700px
+  }
+
+  div#container {
+    position: static;
+    left: 0;
+    width: 100%
+  }
+
+  div#container div#about-me,div#container div#contact-me {
+    float: none;
+    padding: 20px 30px;
+    width: 100%
+  }
+
+  section#bio div.img-full {
+    height: 200px
+  }
+
+  section#bio div.img-full div.avatar {
+    bottom: -22.5px;
+    left: 10px;
+    width: 55px;
+    height: 55px;
+    border-left: 0
+  }
+
+  section#bio div.img-full span.bio-icon {
+    top: 20px;
+    left: 30px;
+    font-size: 1.125rem
+  }
+
+  section#bio div.img-full span.bio-icon i.icon {
+    top: 4px;
+    margin-right: 5px;
+    font-size: 1.875rem
+  }
+
+  section#bio div.desc {
+    padding: 10px
+  }
+
+  section#bio div.desc div.biodata ul li {
+    font-size: 1pc
+  }
+
+  
+
+ 
+}
