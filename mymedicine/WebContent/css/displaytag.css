@@ -1,0 +1,172 @@
+@charset "UTF-8";
+div.exportlinks {
+	margin: -5px 0px 10px 10px;
+	padding: 2px 4px 2px 0px;
+	width: 400px;
+}
+
+div.exportlinks a {
+	text-decoration: none;
+}
+
+div.exportlinks span {
+	background-repeat: no-repeat;
+}
+
+span.csv {
+	background-image: url(../images/ico_file_csv.png);
+}
+
+span.excel {
+	background-image: url(../images/ico_file_excel.png);
+}
+
+span.pdf {
+	background-image: url(../images/ico_file_pdf.png);
+}
+
+span.xml {
+	background-image: url(../images/ico_file_xml.png);
+}
+
+span.export {
+	cursor: pointer;
+	display: inline;
+	display: inline-block;
+	padding: 0 4px 1px 20px;
+}
+
+span.pagebanner {
+	display: block;
+	margin: 10px 0px 0px 10px;
+	padding: 2px 4px 2px 0px;
+	width: 79%;
+}
+
+span.pagelinks {
+	display: block;
+	font-size: .95em;
+	margin-bottom: 5px;
+	margin-top: 0px;
+    margin-left:35px;
+	padding: 2px 0px 2px 0px;
+	text-align: left;
+	width: 80%;
+}
+
+table.list {
+	position: center;
+	border:0; 
+	cellspacing:1; 
+	border-spacing:1;
+	
+	width: 100%;;
+	font-size: 9pt;;
+	color: #000000;;
+	background-color: #6386de;;
+	border-style: none;;
+	border-width: 5;;
+	border-collapse: collapse;
+}
+
+table.list td {
+	padding: 3px;
+}
+
+table.list th {
+	padding: 2;;
+	height: 20;;
+	background-color: #bdcfef;;
+	text-align: center;;
+	font-weight: bold;;
+	font-family: "宋体";
+	color: #000000;;
+	font-size: 9pt;
+}
+
+table.list th a, table.list th a:visited {
+	background-color: transparent;
+	color: #000000;
+	text-decoration: none;
+}
+
+table.list th a:hover {
+	background-color: transparent;
+	color: #008000 !important;
+	text-decoration: overline underline;
+}
+
+th.sorted a, th.sortable a {
+	padding: 2;;
+	height: 20;;
+	background-color: #bdcfef;;
+	text-align: center;;
+	font-weight: bold;;
+	font-family: "宋体";
+	color: #000000;;
+	font-size: 9pt;	
+	
+}
+
+table.list th.order1 a {
+	background-image: url(../images/arrow_down.png) !important;
+}
+
+table.list th.order2 a {
+	background-image: url(../images/arrow_up.png) !important;
+}
+
+table.list th.sortable a {
+	background-image: url(../images/arrow_off.png);
+}
+
+table.list th.sorted {
+	background-color: #ffd;
+	color: #000000;
+}
+
+table.list th.sorted a, table.list th.sortable a {
+	background-position: right;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+table.list th.sortable:hover {
+	background: #FFFF40;
+	color: #008000;
+}
+
+table.list thead tr {
+	background-color: #FFCC00;
+}
+
+table.list tr.even {
+	background-color: #ffffff
+}
+
+table.list tr.odd {
+	background-color: #ffffff
+}
+
+/* highlight table row onmouseover */
+table.list tr.over {
+	background: #FFFF40;
+	border-bottom: 1px solid #C0C0C0;
+	border-top: 1px solid #C0C0C0;
+	color: #000000;
+	cursor: pointer;
+	cursor: hand; /* IE 5.5 non-compliant workaround */
+}
+
+/* override width for user list */
+table.userList {
+	width: 80% !important;
+}
+
+table.AccRateSubjects {
+	width: 780px;
+}
+
+table.activeUserList, body#activeUsers span.pagelinks {
+    width: 450px !important;
+}
